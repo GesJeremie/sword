@@ -15,6 +15,7 @@
     "auto-reload-brunch": ">= 1.0 < 1.8",
     "coffee-script-brunch": "^1.8.1",
     "javascript-brunch": ">= 1.0 < 1.8",
-    "uglify-js-brunch": ">= 1.0 < 1.8"
+    "uglify-js-brunch": ">= 1.0 < 1.8",
+    "read-components": "^0.6.1"
   }
 }
