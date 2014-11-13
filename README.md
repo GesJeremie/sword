@@ -100,6 +100,7 @@ brunch watch
 
 ### Enjoy
 Go to your app/ folder and write your coffeescript files, everything works !
+You can go to the example.html file to render the example js app
 
 FAQ
 =====
@@ -109,5 +110,5 @@ FAQ
 > Run codo in your terminal
 	
 	> codo
-	
+
 > It will render the documentation in the folder ./output
