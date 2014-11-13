@@ -8,7 +8,7 @@ Tiny project to kick-start your front end workflow for coffeescript via Brunch
 Goals
 =====
 
-- I want write my javascript application with coffeescript like a gentleman
+- I want to write a javascript application and use coffeescript like a gentleman
 
 	> So I use [Brunch](http://brunch.io) + the [coffee-script-brunch](https://www.npmjs.org/package/coffee-script-brunch) plugin
 
