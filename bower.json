@@ -1,0 +1,18 @@
+{
+  "name": "your-app",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "crossroads": "~0.12.0",
+    "js-signals": "~1.0.0",
+    "underscore": "~1.7.0"
+  },
+  "overrides": {
+    "crossroads": {
+      "main": "dist/crossroads.js",
+      "dependencies": {
+        "js-signals": "~1.0.0"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+--name       "Name of your sword application"
+--readme     README.md
+--title      "Name of your sword application"
+--private
+--quiet
+--extension  coffee
+--output     ./output/doc
+./app
+-
+LICENSE
+README.md

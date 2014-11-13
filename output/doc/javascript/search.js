@@ -1,0 +1,1 @@
+window.searchData = [{"t":"Bootstrap","p":"class/Bootstrap.html"},{"t":"app/bootstrap.coffee","p":"file/app/bootstrap.coffee.html"},{"t":"README.md","p":"extra/README.md.html"},{"t":"LICENSE","p":"extra/LICENSE.html"},{"t":"Bootstrap#constructor","p":"class/Bootstrap.html#constructor-dynamic"}]
