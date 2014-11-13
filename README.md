@@ -109,6 +109,8 @@ FAQ
 
 > Run codo in your terminal
 	
->	codo
+> ```
+> codo
+> ```
 
 > It will render the documentation in the folder ./output
