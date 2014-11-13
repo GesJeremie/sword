@@ -91,11 +91,13 @@
   globals.require.brunch = true;
 })();
 require.register("app", function(exports, require, module) {
-var App;
+var App, Home;
+
+Home = require('example/home');
 
 App = (function() {
   function App() {
-    require('routes');
+    new Home();
   }
 
   return App;
@@ -105,48 +107,29 @@ App = (function() {
 module.exports = App;
 });
 
-;require.register("core/libs/route", function(exports, require, module) {
-var Route;
+;require.register("example/home", function(exports, require, module) {
+var Home;
 
-Route = (function() {
-  Route.prototype.options = {
-    baseUrl: ''
-  };
+Home = (function() {
+  Home.prototype.punchline = '<h1>Sword works</h1>';
 
-  Route.prototype._segment = '';
+  Home.prototype.description = '<p>Grab a coffee and start to work ...</p>';
 
-  function Route(options) {
-    this.options = _.extend(this.options, options);
-    this._segment = window.location.href.replace(this.options.baseUrl, '');
+  Home.prototype.github = '<a target="_blank" href="https://github.com/GesJeremie/sword" class="btn">Github</a>';
+
+  function Home() {
+    this.render();
   }
 
-  Route.prototype.add = function(pattern, callback) {
-    return crossroads.addRoute(pattern, callback);
+  Home.prototype.render = function() {
+    return document.getElementById('home').innerHTML = this.punchline + this.description + this.github;
   };
 
-  Route.prototype.run = function() {
-    return crossroads.parse(this._segment);
-  };
-
-  return Route;
+  return Home;
 
 })();
 
-module.exports = Route;
-});
-
-;require.register("routes", function(exports, require, module) {
-var Route;
-
-Route = require('core/libs/route');
-
-Route = new Route({
-  baseUrl: 'http://localhost:8888/sword-project'
-});
-
-Route.add('/', function() {
-  return console.log('hello');
-});
+module.exports = Home;
 });
 
 ;

@@ -34,17 +34,60 @@
         </p>
       </nav>
       <div id='filecontents'>
-        <h1 id="sword">Sword</h1><p>Tiny project to kick-start my front end workflow for javascript.</p><h1 id="requirements">Requirements</h1>
+        <h1 id="sword">Sword</h1><p><img src="/sword.png" alt="Sword"></p><p>Tiny project to kick-start your front end workflow for coffeescript via Brunch</p><h1 id="goals">Goals</h1>
 <ul>
-<li>Brunch </li>
-<li>Codo</li>
+<li><p>I want write my javascript application with coffeescript like a gentleman</p><blockquote><p>So I use <a href="http://brunch.io">Brunch</a> + the <a href="https://www.npmjs.org/package/coffee-script-brunch">coffee-script-brunch</a> plugin</p></blockquote>
+</li>
+<li><p>I want an &quot;include&quot; function like PHP</p><blockquote><p>So I use <a href="http://brunch.io">Brunch</a> and I can do ...</p><pre><code class="lang-coffeescript">App = require(&#39;app&#39;)
+</code></pre>
+</blockquote>
+</li>
+<li><p>I don&#39;t want include a bunch of &quot;script&quot; in my html</p><blockquote><p>So I use <a href="http://brunch.io">Brunch</a> and I can just add </p><pre><code class="lang-html">&lt;script src=&quot;vendor.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;application.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+   var App = require(&#39;app&#39;);
+   App.new();
+&lt;/script&gt;
+</code></pre><p>in my html to start my javascript application</p></blockquote>
+</li>
+<li><p>I don&#39;t want execute a bunch of commands to compile my javascript files and view the result in my browser</p><blockquote><p>So I use <a href="http://brunch.io">Brunch</a> and I run just one time</p><pre><code class="lang-terminal">brunch watch
+</code></pre><p>and brunch compiles my javascript file and output 2 files vendor.js and app.js</p></blockquote>
+</li>
+<li><p>I want a special syntax to write my comments and a command to generate a documentation</p><blockquote><p>So I use <a href="https://github.com/coffeedoc/codo">Codo</a>, I follow the conventions and I can generate a documentation with </p><pre><code class="lang-terminal">codo
+</code></pre>
+</blockquote>
+</li>
+<li><p>I want a simple system to download front packages and use directly in my application</p><blockquote><p>So I use <a href="http://bower.io">Bower</a> to install some packages with </p><pre><code>bower install jquery
+</code></pre><p>and I use <a href="https://github.com/paulmillr/read-components">Read Components</a> because brunch can handle for me the lazy job to reference every vendor packages of my application.</p></blockquote>
+</li>
 </ul>
-<h1 id="getting-started">Getting started</h1><p>run &quot;codo&quot; to auto-generate documentation
-run &quot;brunch watch&quot; to auto-compile the application</p>
+<h1 id="requirements">Requirements</h1>
+<ul>
+<li><a href="http://brunch.io">Brunch</a> </li>
+<li><a href="http://bower.io">Bower</a></li>
+<li><a href="https://github.com/coffeedoc/codo">Codo</a></li>
+<li><a href="https://github.com/paulmillr/read-components">Read Components</a></li>
+</ul>
+<h1 id="install">Install</h1>
+<h3 id="install-bower">Install bower</h3>
+<pre><code class="lang-terminal">npm install -g bower
+</code></pre><p>Bower requires Node, Npm and git</p><h3 id="install-brunch">Install brunch</h3>
+<pre><code class="lang-terminal">npm install -g brunch
+</code></pre>
+<h3 id="create-new-sword-workflow">Create new Sword workflow</h3>
+<pre><code class="lang-terminal">brunch new gh:GesJeremie/sword your-app
+</code></pre>
+<h3 id="install-npm-packages">Install npm packages</h3>
+<pre><code class="lang-terminal">cd your-app &amp;&amp; npm install
+</code></pre>
+<h3 id="run-brunch">Run brunch</h3>
+<pre><code class="lang-terminal">brunch watch
+</code></pre>
+<h3 id="enjoy">Enjoy</h3><p>Go to your app/ folder and write your coffeescript files, everything works !</p>
       </div>
     </div>
     <div id='footer'>
-  November 13, 14 01:35:02 by
+  November 13, 14 06:53:38 by
   <a href='https://github.com/coffeedoc/codo' title='CoffeeScript API documentation generator'>
     Codo
   </a>

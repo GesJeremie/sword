@@ -1,0 +1,80 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.30
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Applications/MAMP/htdocs/sword-project/sword',
+5 verbose install   [ 'auto-reload-brunch',
+5 verbose install     'coffee-script-brunch',
+5 verbose install     'javascript-brunch',
+5 verbose install     'uglify-js-brunch' ] ]
+6 info preinstall your-app@0.0.1
+7 verbose readDependencies using package.json deps
+8 verbose already installed skipping javascript-brunch@>= 1.0 < 1.8 /Applications/MAMP/htdocs/sword-project/sword
+9 verbose already installed skipping uglify-js-brunch@>= 1.0 < 1.8 /Applications/MAMP/htdocs/sword-project/sword
+10 verbose already installed skipping auto-reload-brunch@>= 1.0 < 1.8 /Applications/MAMP/htdocs/sword-project/sword
+11 verbose already installed skipping coffee-script-brunch@^1.8.1 /Applications/MAMP/htdocs/sword-project/sword
+12 silly resolved []
+13 info build /Applications/MAMP/htdocs/sword-project/sword
+14 verbose linkStuff [ false, false, false, '/Applications/MAMP/htdocs/sword-project' ]
+15 info linkStuff your-app@0.0.1
+16 verbose linkBins your-app@0.0.1
+17 verbose linkMans your-app@0.0.1
+18 verbose rebuildBundles your-app@0.0.1
+19 verbose rebuildBundles [ '.bin',
+19 verbose rebuildBundles   'auto-reload-brunch',
+19 verbose rebuildBundles   'brunch',
+19 verbose rebuildBundles   'clean-css-brunch',
+19 verbose rebuildBundles   'codo',
+19 verbose rebuildBundles   'coffee-script-brunch',
+19 verbose rebuildBundles   'css-brunch',
+19 verbose rebuildBundles   'javascript-brunch',
+19 verbose rebuildBundles   'read-components',
+19 verbose rebuildBundles   'uglify-js-brunch' ]
+20 verbose rebuild bundle /Applications/MAMP/htdocs/sword-project/sword/node_modules/brunch
+21 info build /Applications/MAMP/htdocs/sword-project/sword/node_modules/brunch
+22 info preinstall brunch@1.7.18
+23 verbose linkStuff [ false,
+23 verbose linkStuff   false,
+23 verbose linkStuff   false,
+23 verbose linkStuff   '/Applications/MAMP/htdocs/sword-project/sword/node_modules' ]
+24 info linkStuff brunch@1.7.18
+25 warn prefer global brunch@1.7.18 should be installed with -g
+26 verbose linkBins brunch@1.7.18
+27 verbose link bins [ { brunch: './bin/brunch' },
+27 verbose link bins   '/Applications/MAMP/htdocs/sword-project/sword/node_modules/.bin',
+27 verbose link bins   false ]
+28 verbose linkMans brunch@1.7.18
+29 verbose rebuildBundles brunch@1.7.18
+30 verbose rebuildBundles [ '.bin',
+30 verbose rebuildBundles   'anysort',
+30 verbose rebuildBundles   'async-each',
+30 verbose rebuildBundles   'async-waterfall',
+30 verbose rebuildBundles   'chokidar',
+30 verbose rebuildBundles   'coffee-script',
+30 verbose rebuildBundles   'commander',
+30 verbose rebuildBundles   'commonjs-require-definition',
+30 verbose rebuildBundles   'debug',
+30 verbose rebuildBundles   'init-skeleton',
+30 verbose rebuildBundles   'loggy',
+30 verbose rebuildBundles   'mkdirp',
+30 verbose rebuildBundles   'ncp',
+30 verbose rebuildBundles   'pushserve',
+30 verbose rebuildBundles   'read-components',
+30 verbose rebuildBundles   'source-map' ]
+31 error Error: EACCES, unlink '/Applications/MAMP/htdocs/sword-project/sword/node_modules/.bin/brunch'
+31 error  { [Error: EACCES, unlink '/Applications/MAMP/htdocs/sword-project/sword/node_modules/.bin/brunch']
+31 error   errno: 3,
+31 error   code: 'EACCES',
+31 error   path: '/Applications/MAMP/htdocs/sword-project/sword/node_modules/.bin/brunch' }
+32 error Please try running this command again as root/Administrator.
+33 error System Darwin 13.3.0
+34 error command "node" "/usr/local/bin/npm" "install"
+35 error cwd /Applications/MAMP/htdocs/sword-project/sword
+36 error node -v v0.10.30
+37 error npm -v 1.4.21
+38 error path /Applications/MAMP/htdocs/sword-project/sword/node_modules/.bin/brunch
+39 error code EACCES
+40 error errno 3
+41 error stack Error: EACCES, unlink '/Applications/MAMP/htdocs/sword-project/sword/node_modules/.bin/brunch'
+42 verbose exit [ 3, true ]
