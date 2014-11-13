@@ -90,7 +90,11 @@ brunch new gh:GesJeremie/sword your-app
 
 ### Install npm packages
 ```terminal
-cd your-app && npm install 
+cd your-app
+```
+
+```terminal
+npm install
 ```
 
 ### Run brunch
