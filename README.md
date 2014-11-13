@@ -43,7 +43,7 @@ Goals
 	> brunch watch
 	> ```
 
-	> and brunch compiles my javascript file and output 2 files vendor.js and app.js
+	> and brunch compiles my javascript file and output 2 files vendor.js and app.js when my coffeescript files change
 
 - I want a special syntax to write my comments and a command to generate a documentation
 
